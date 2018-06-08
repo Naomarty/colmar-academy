@@ -1,0 +1,192 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Header Section */
+
+header {
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  width: 2rem;
+}
+
+#colm {
+  font-weight: bold;
+  padding-right: 0.125rem;
+}
+
+#acad {
+  color: #999999;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 1rem;
+}
+
+nav ul:last-child {
+  padding-right: 1.5rem;
+}
+
+/* Banner Section */
+
+.banner {
+  background-color: #d6d6d6;
+}
+
+.banner img {
+  max-width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.textbox {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textbox h1 {
+  font-weight: bold;
+}
+
+.textbox p {
+  padding: 1.5rem 0;
+}
+
+.textbox span {
+  color: white;
+  background-color: #4a4a4a;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+/* Main Section */
+
+main {
+  background-color: #f5f5f5;
+}
+
+.main-left {
+  margin: 0 1.5rem;
+  max-width: 60%;
+  padding: 2rem 0;
+}
+
+.main-left img {
+  width: 100%;
+}
+
+.main-left h2 {
+  padding: 2rem 0 1.5rem 0;
+  font-weight: bold;
+}
+
+.main-left div span {
+  font-size: 0.75rem;
+  height: 2rem;
+  align-items: flex-end;
+}
+
+.main-right {
+  max-width: 40%;
+  border-left: 0.175rem solid #d6d6d6;
+  padding: 1rem 0 2rem 0;
+}
+
+#mid-right-box {
+  border-top: 0.25rem solid #d6d6d6;
+}
+
+.right-box img {
+  max-width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.right-tb {
+  max-width: 65%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-tb p {
+  padding: 1rem 0;
+}
+
+#btm-right-box {
+  background-color: #d6d6d6;
+}
+
+/* Start Learning Section */
+
+.learning {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebebeb;
+}
+
+.learning h2 {
+  padding: 2rem 0 1rem 0;
+  font-weight: bold;
+}
+
+.courses {
+  margin: 0 4rem 1rem 4rem;
+  flex-direction: column;
+}
+
+.courses-box {
+  margin: 1rem;
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.courses-box img {
+  width: 100%;
+  height: auto;
+}
+
+.courses-tb {
+  padding: 1rem 0 1.5rem 1rem;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+
+.courses-tb span {
+  padding: 0.5rem 0;
+}
