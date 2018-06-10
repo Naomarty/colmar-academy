@@ -28,6 +28,12 @@ a {
   background-color: #d6d6d6;
 }
 
+@media only screen and (min-width: 480px) {
+  .mob {
+    display: none;
+  }
+}
+
 /* Header Section */
 
 header {
@@ -65,6 +71,18 @@ nav ul:last-child {
   padding-right: 1.5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  #colm, #acad, nav {
+    display: none;
+  }
+
+  .logo {
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+  }
+}
+
 /* Banner Section */
 
 .banner {
@@ -72,7 +90,7 @@ nav ul:last-child {
 }
 
 .banner img {
-  max-width: 60%;
+  width: 60%;
   height: auto;
   margin: 2rem 1.5rem;
 }
@@ -95,6 +113,37 @@ nav ul:last-child {
   background-color: #4a4a4a;
   justify-content: center;
   padding: 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .textbox {
+    width: auto;
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .textbox p {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .textbox span {
+    background-color: #999999;
+  }
+
 }
 
 /* Main Section */
