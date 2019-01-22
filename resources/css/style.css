@@ -105,7 +105,7 @@ nav ul:last-child {
 
 .banner img {
   width: 60%;
-  height: auto;
+  height: 60%;
   margin: 2rem 1.5rem;
 }
 
@@ -204,7 +204,7 @@ main {
 
 .right-box img {
   width: 35%;
-  height: auto;
+  height: 35%;
   padding: 1rem;
 }
 
