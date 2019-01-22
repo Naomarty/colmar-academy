@@ -1,0 +1,428 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: #4a4a4a;
+}
+
+.flex {
+  display: flex;
+}
+
+#graybox {
+  background-color: #d6d6d6;
+}
+
+@media only screen and (min-width: 480px) {
+  .mob {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: #f5f5f5;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  #graybox {
+    background-color: inherit;
+  }
+}
+
+/* Header Section */
+
+header {
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  width: 2rem;
+}
+
+#colm {
+  font-weight: bold;
+  padding-right: 0.125rem;
+}
+
+#acad {
+  color: #999999;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 1rem;
+}
+
+nav ul:last-child {
+  padding-right: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #colm, #acad, nav {
+    display: none;
+  }
+
+  .logo {
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+  }
+}
+
+/* Banner Section */
+
+.banner {
+  background-color: #d6d6d6;
+}
+
+.banner img {
+  width: 60%;
+  height: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.textbox {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textbox h1 {
+  font-weight: bold;
+}
+
+.textbox p {
+  padding: 1.5rem 0;
+}
+
+.textbox span {
+  color: white;
+  background-color: #4a4a4a;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .textbox {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .textbox h1 {
+    font-size: 1.75rem;
+    margin: 0 1rem;
+  }
+
+  .textbox p {
+    padding: 2rem 0 1.5rem 0;
+    margin: 0 1rem;
+  }
+
+  .textbox span {
+    background-color: #999999;
+    margin: 0 1rem;
+  }
+}
+
+/* Main Section */
+
+main {
+  background-color: #f5f5f5;
+}
+
+.main-left {
+  margin: 0 1.5rem;
+  width: 60%;
+  padding: 2rem 0;
+}
+
+.main-left img {
+  width: 100%;
+}
+
+.main-left h2 {
+  padding: 2rem 0 1.5rem 0;
+  font-weight: bold;
+}
+
+.main-left p {
+  color: #7d7d7d;
+}
+
+.main-left div span {
+  font-size: 0.75rem;
+  height: 2rem;
+  align-items: flex-end;
+}
+
+.main-right {
+  width: 40%;
+  border-left: 0.175rem solid #ebebeb;
+  padding: 1rem 0 2rem 0;
+}
+
+.mid-right-box {
+  border-top: 0.25rem solid #ebebeb;
+}
+
+.right-box img {
+  width: 35%;
+  height: 35%;
+  padding: 1rem;
+}
+
+.right-tb {
+  width: 65%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-tb p {
+  padding: 1rem 0;
+  color: #7d7d7d;
+}
+
+.right-tb a {
+  color: #5d9ce3;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-left {
+    display: none;
+  }
+
+  .main-right {
+    width: 100%;
+    border: 0;
+  }
+
+  .right-box {
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .right-box img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .mid-right-box {
+    border: 0;
+  }
+
+  .right-tb {
+    margin: 1rem;
+  }
+
+  .mid-right-box {
+    padding: 2rem 0;
+  }
+
+  .main-right:last-child {
+    margin-bottom: -2rem;
+  }
+}
+
+/* Start Learning Section */
+
+.learning {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebebeb;
+}
+
+.learning h2 {
+  padding: 2rem 0 1rem 0;
+  font-weight: bold;
+}
+
+.courses {
+  margin: 0 4rem 1rem 4rem;
+  flex-direction: column;
+}
+
+.courses-box {
+  margin: 1rem;
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+
+.courses-box img {
+  width: 100%;
+  height: auto;
+}
+
+.courses-tb {
+  padding: 1rem 0 1.5rem 1rem;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+
+.courses-tb span {
+  padding: 0.5rem 0;
+}
+
+#courses {
+  color: #9e9e9e;
+}
+
+.courses-tb p {
+  color: #9e9e9e;
+}
+
+@media only screen and (max-width: 480px) {
+  .learning {
+    background-color: #f5f5f5;
+    border-top: 0.125rem solid #ebebeb;
+    border-bottom: 0.125rem solid #ebebeb;
+    padding-bottom: 1.5rem;
+  }
+
+  .courses-mob {
+    width: 100%;
+  }
+
+  .courses-mob ul li {
+    background-color: #d6d6d6;
+    padding: 1rem 0 1.5rem 1rem;
+    margin: 0.5rem 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* Thesis Exhibit Section */
+
+.thesis {
+  background-color: #f5f5f5;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thesis h2 {
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.thesis-left {
+  margin: 0 1.5rem;
+  width: 60%;
+  padding: 2rem 0;
+}
+
+.thesis-left video {
+  width: 100%;
+}
+
+.thesis-left h3 {
+  padding: 2rem 0 1.5rem 0;
+}
+
+.thesis-left p {
+  color: #7d7d7d;
+}
+
+.thesis-right {
+  width: 40%;
+  padding: 2rem 0 2rem 0;
+}
+
+#mid-right-box {
+  border-top: 0.25rem solid #ebebeb;
+}
+
+@media only screen and (max-width: 480px) {
+  .thesis {
+    padding-bottom: 1.5rem;
+  }
+
+  .thesis h2 {
+    padding-bottom: 1rem;
+  }
+
+  .thesis-left {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* Footer Section */
+
+footer {
+  border-top: 0.175rem solid #ebebeb;
+  background-color: #f5f5f5;
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #7d7d7d;
+}
+
+.right-f span:last-child {
+  padding-left: 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    border: 0;
+    padding: 1rem 0 1rem 1.5rem;
+  }
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
